@@ -1,0 +1,22 @@
+<html>
+<body>
+  <p>Google Link</p>
+  <a id="id1" href="http://www.google.com">Link!!!!</a>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+  $(document).ready(function() {
+   $('#id1').click(function (fun) {
+    fun.preventDefault();
+    alert("Can't access");
+    
+   });
+   
+  });
+  
+ 
+ </script>
+
+</html>
