@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    #slideshow { 
+    margin-left: 500px;
+    margin-top: 150px; 
+    position: relative; 
+    }
+
+</style>
+</head>
+<body>
+        <div id="slideshow">
+            <div>
+              <img src="1.jpg">
+            </div>
+            <div>
+              <img src="2.jpg">
+            </div>
+            <div>
+              <img src="3.jpg">
+            </div>
+            <div>
+                <img src="4.jpg">
+            </div>
+         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
+    <script>
+        $(document).ready(function(){
+            $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() { 
+                $('#slideshow > div:first')
+                    .fadeOut(0)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+                },  3000);   
+                        });
+    </script>
+</body>
+</html>
+</html>
