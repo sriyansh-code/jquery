@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.main {
+    width:400px;
+  height:400px;
+  background-color:aqua;
+  }
+li {
+   list-style:none;
+  background-color:yellow;
+  display:inline;
+  padding:5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <br>
+       <ul>
+       <li> Sriyansh</li>
+       <li> Jain</li>
+       <li> To The New</li>    
+       </ul>
+    </div>
+<script>
+$(document).ready(function()
+{
+  $('.main').on('click', function (){ 
+  alert('You clicked');}).children().on('click', function (fun) {
+    fun.stopPropagation();
+});
+});
+</script>
+</body>
+</html>
