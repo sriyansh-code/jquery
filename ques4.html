@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+<p> Disable submit button <p>
+<form action="" method="GET" id="f">
+    <input type="submit" id="sub"></input>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#f").submit(function (e) {
+            e.preventDefault();
+            
+            $("#sub").attr("disabled", true);
+
+            return true;
+
+        });
+    });
+</script>
+
+</body>
+</html>
