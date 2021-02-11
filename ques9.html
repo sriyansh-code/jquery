@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <label>Games</label>
+  <br>
+  <select>
+    <option value="">Select Game</option>
+    <option value="GTA V">GTA V</option>
+    <option value="Crysis">Crysis</option>
+    <option value="Fifa 19">Fifa 19</option>
+    <option value="Far Cry">Far Cry</option>
+    <option value="NFS Payback">NFS Payback</option>
+    <option value="Call of Duty Ghosts">Call of Duty Ghosts</option>
+    <option value="Resident Evil Operations">Resident Evil Operations</option>
+    <option value="Tekken 7">Tekken 7</option>
+    <option value="Max Payne 3">Max Payne 3</option>
+    <option value="Mass Effect 3">Mass Effect 3</option>
+  </select>
+<br>
+<br>
+<span>So you want to have <span><br>
+  <p id="p1"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#p1").append(this.value+" <br>")
+});
+});
+    
+</script>
+</body>
+</html>
