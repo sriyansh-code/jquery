@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.target{
+			font-size: 1em;
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+	<p class="target">Sriyansh Jain, To the New, Noida</p>
+</div>
+
+<center><button class="target">Click me!!!</button></center>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script >
+		$(document).ready(function() {
+			$("button").click(function() {
+				$(".target").parent("#main").css('font-size', "2em");
+			});
+			
+		});
+	</script>
+</body>
+</html>
