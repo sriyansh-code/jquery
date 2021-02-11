@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.load {
+  font-size: 100px;
+  color: yellow;
+}
+</style>
+</head>
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $('#test').addClass("load");
+      });
+    });
+    </script>
+<body>
+<p id= "test"> Hello!!!!!!.</p>
+<button>Add a new class </button>
+</body>
+</html>
