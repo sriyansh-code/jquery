@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+    border: 2px solid grey;
+  padding:5px;
+}
+</style>
+</head>
+<body>
+
+<table id="tab1" style="border:2px solid grey">
+  <tr>
+    <th class="name">Name</th>
+    <th class="sal">Salary(in thousands)</th>
+  </tr>
+  <tr>
+    <td class="name">Sriyansh</td>
+    <td class="sal">9</td>
+  </tr>
+  <tr>
+    <td class="name">Girish</td>
+    <td class="sal">30</td>
+  </tr>
+   <tr>
+    <td class="name">Shashank</td>
+    <td class="sal">7</td>
+  </tr>
+<tr>
+    <td class="name">Arzoo</td>
+    <td class="sal">18</td>
+  </tr>
+<tr>
+    <td class="name">Himanshu</td>
+    <td class="sal">6</td>
+  </tr>
+  </table>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $('.sal').each(function(i, n) {
+   if($(n).text() > 10) 
+      $(n).css('background-color','aqua');
+});
+});
+</script>
+</body>
+</html>
