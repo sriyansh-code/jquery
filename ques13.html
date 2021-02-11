@@ -1,0 +1,41 @@
+<html>
+<body>
+    <div class="div1">
+      <p>Sriyansh</p>
+      <p>Jain</p>
+      <p>To The New</p>
+  </div>
+     <br>
+    <div class="div1">
+     <p>Girish</p>
+      <p>To the New</p>
+    </div>
+   <br>
+    <div class="div1">
+    <p>Shashank</p>
+  </div>
+     <br>
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function()
+{
+        var a = null,b = 0;
+       $(".div1").each(function()
+       {
+         var c = $(this).height();
+         
+              if(c > b){
+                   b = c;
+                   a=$(this);
+                    }         
+      });
+       alert('max height'+b); 
+         $(a).css("background-color","aqua");
+  
+});
+</script>
+</body>
+</html>
