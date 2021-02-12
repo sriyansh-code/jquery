@@ -11,7 +11,7 @@
         $("button").click(function()
        {
       
-            $.ajax({url:"test.txt",async:'true',dataType:'text',type:'DELETE',success:function(result) {
+            $.ajax({url:"test.txt",async:'true',dataType:'text',type:'GET',success:function(result) {
                 setTimeout(function(){
                      $('#div1').append('</br>'+result);
                      $('button').remove();
